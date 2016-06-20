@@ -67,8 +67,14 @@ public boolean makes10(int a, int b){
 // missingChar("kitten", 0) → "itten"
 // missingChar("kitten", 4) → "kittn"
 
+// Initial (Not sure that this module would be better)
+
+// public String missingChar(String str, int n) {
+//   	StringBuilder newString = new StringBuilder(str); 
+// 	return newString.deleteCharAt(n).toString(); 
+// }
+
 public String missingChar(String str, int n) {
-  StringBuilder newString = new StringBuilder(str); 
-	return newString.deleteCharAt(n).toString(); 
+	return str.substring(0, n) + str.substring(n + 1);
 }
 
